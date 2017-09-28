@@ -1,0 +1,22 @@
+header {
+    background: #E4C49A;
+    padding: 10px;
+}
+
+#frontTitle {
+    text-decoration: underline;
+    text-align: center;
+    
+}
+
+.darkCol1 {
+    background-color: #1A6620;
+}
+
+.darkCol2{
+    background: green;
+}
+
+.darkCol3 {
+    background: red;
+}
