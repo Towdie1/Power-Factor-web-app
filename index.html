@@ -11,36 +11,28 @@
     <body>
         <header>
             <h1 id='frontTitle'>The Power Factor Weight Training App</h1>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                  
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" href="#">Disabled</a>
-                        </li>
-                      </ul>
-                      <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                      </form>
-                    </div>
-                  </nav>
+           
         </header>
-        <div class="container">
+        <div id="main-section"class="container">
             <div class="row">
-                <div class="darkCol1 col-sm-12 col-xs-12">this is the dark col</div>
-                <div class="darkCol2 col-sm-12">this is the dark col2</div>
-                <div class="darkCol3 col-sm-12">this is the dark col3</div>
+                <div id="control-area">
+                    <select>
+                        <option value="sholuders">|Shoulders</option>
+                        <option value="traps">Traps</option>
+                        <option value="triceps">Triceps</option>
+                        <option value="biceps">Biceps</option>
+                        <option value="abs">Abs</option>
+                      </select>
+                  
+                  <input id="reps-input" type="text" placeholder="Reps">
+                  <input id="time-input" type="text" placeholder="time">
+                  <input id="weight-input" type="text" placeholder="weight">
+                  <div id="result">Result</div>
+                <button id="calculate-power-factor" class="buttons">Calculate Power Factor</button>
+                
+                
+                </div>
+                
             </div>
         </div>
             
