@@ -10,7 +10,7 @@
     </head>
     <body>
         <header>
-            <h1 id='frontTitle'>The Power Factor Weight Training App</h1>
+            <h1 id='frontTitle'>The Power Factor Weight Training Web App</h1>
            
         </header>
         <div id="main-section"class="container">
@@ -33,8 +33,10 @@
                   <input id="time-input" type="text" placeholder="time">
                  
                   
-                  <button id="calculate-power-factor" class="buttons" onclick="calculatePF(reps, weight, time)">Calculate Power Factor</button></div>
-                  <textarea name="result" id="result" cols="10" rows="2"> </textarea>
+                  <button id="calculate-power-factor" class="buttons" onclick="changeText('result')">Calculate Power Factor</button>
+            
+                  <input id="result" type="text" placeholder="results">
+                 
                 </div>
                 
             </div>
@@ -44,17 +46,20 @@
 
         <footer>
           <script>
-          var reps = document.getElementById('reps-input').value;
-          var weight = document.getElementById('weight-input').value;
-          var time = document.getElementById('time-input').value;
+    
+          
+function changeText(id){ 
+                var weight = document.getElementById('weight-input').value;
+                var reps = document.getElementById('reps-input').value;
+                var time = document.getElementById('time-input').value;
+                 
+                 document.getElementById(id).value = ((reps*weight)/time)+" kg per minute";
+        }
          
 
-          
-          
-
-          function calculatePF(reps, weight, time) {
-            var score = (reps*weight)/time;
-            document.getElementById('result').value(score);
+          function changeResult(string){
+              document.getElementById('result').vaule = (string);
+              
           }
           
           
