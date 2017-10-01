@@ -1,6 +1,6 @@
 <?php  
         //Only process the form if $_POST isn't empty
-        if ( ! empty ($_POST )){
+        if (! empty ($_POST)){
            
 
         //connect to MySQL
