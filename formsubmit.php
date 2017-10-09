@@ -4,7 +4,7 @@
            
 
         //connect to MySQL
-        $mysqli = new mysqli('localhost', 'towdie', '!Sp4nk1ngs?', 'pf_data')
+        $mysqli = new mysqli('localhost', 'towdie10_pf', '!Sp4nk1ngs?', 'towdie10_pf_data')
         
         // check the connection
         if ( $mysqli->connect_error) {

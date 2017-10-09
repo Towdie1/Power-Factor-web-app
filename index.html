@@ -7,6 +7,7 @@
         <title>Power Factor Web App</title>
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
 
         <!--<?php include 'formsubmit.php';?> -->
        
@@ -16,45 +17,65 @@
     <body>
             
         <header>
-            <h1 id='frontTitle'>The Power Factor Weight Training Web App</h1>
+            <h1 id='frontTitle'>The Power Factor Weight Training Web App <i class="fa fa-anchor"></i></h1>
             
         </header>
 
-        
-        <div id="main-section"class="container">
+        <main class="container-fluid">
+                   
             <div class="row">
                 
-                <div id="control-area">
-                    
-                    <input type="date" name="worked out on...">
+                <div class="col-xl-2">
+                    <input type="date" id="dateSelector">
+                </div>
+                <div class="col-xl-2">
                     <select>
                         <option value="sholuders">Shoulders</option>
                         <option value="traps">Traps</option>
                         <option value="triceps">Triceps</option>
                         <option value="biceps">Biceps</option>
                         <option value="abs">Abs</option>
+                        <option value="lowerback">Lower Back</option>
+                        <option value="widegripchest">Wide Grip Chest</option>
+                        <option value="upperback">Upper Back</option>
+                        <option value="thighs">Thighs</option>
+                        <option value="calves">Calves</option>
                       </select>
-                  
-                      
+                </div>                  
+                <div class="col-xl-2">
                   <input id="reps-input" type="text" placeholder="Reps">
-                  <input id="weight-input" type="text" placeholder="weight">
-                  <input id="time-input" type="text" placeholder="time">
-                 
-                  <button id="calculate-power-factor" class="buttons" onclick="changeText('result')">Calculate Power Factor</button>
-            
-                  <textarea name="result" id="result" cols="30" rows="10" placeholder="results"></textarea> 
-                 
-
-                  <form method="post" action="">
-                      <input type="text" name="name" id="name-field" placeholder="name">
-                     
-                      
-                  </form>
-                  <input type="submit" value="Submit form">
                 </div>
-                
+                <div class="col-xl-2">
+                  <input id="weight-input" type="text" placeholder="weight">
+                </div>
+                <div class="col-xl-2">
+                  <input id="time-input" type="text" placeholder="time">
+                </div>
+                <div class="col-xl-2">                        
+                  <button id="calculate-power-factor" class="buttons" onclick="changeText('result')">Calculate Power Factor</button>
+                </div>
             </div>
-        </div>
+            
+            <div class="row">  
+                <div class="col-xl-4">
+                <input id="result" type="text" placeholder="results"> 
+                    </div>
+                <div class="col-xl-8">
+                <form method="post" action="">
+                      <input type="text" name="name" id="name-field" placeholder="name">
+                     <input type="submit" value="Submit form">
+                </form>
+                    </div>
+                 
+                </div>
+        
+            </main>
+            
+
+                  
+                
+           
+        
             
 
 
